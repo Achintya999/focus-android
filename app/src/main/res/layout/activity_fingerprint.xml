@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/activity_fingerprint"
-    android:background="@drawable/background_inactive"
+    android:background="@color/photonMagenta70"
     tools:context="org.mozilla.focus.activity.FingerprintActivity">
 
 

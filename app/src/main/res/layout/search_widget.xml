@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/text_container"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:background="@color/photonMagenta70">
+
+
+    <TextView
+        android:id="@+id/edt_text"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:paddingStart="12dp"
+        android:background="@color/photonMagenta70"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:text="Firefox Focus"
+        android:fontFamily="serif" />
+
+    <ImageButton
+        android:id="@+id/search_focus"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@color/photonMagenta70"
+        android:src="@drawable/ic_search"
+        android:scaleType="center"
+        android:contentDescription="Search The Web"/>
+
+</LinearLayout>
