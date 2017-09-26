@@ -7,7 +7,7 @@
     android:id="@+id/text_container"
     android:layout_gravity="center"
     android:gravity="center_vertical"
-    android:background="@color/photonMagenta70">
+    android:background="@drawable/background_gradient">
 
 
     <TextView

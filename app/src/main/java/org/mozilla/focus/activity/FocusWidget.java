@@ -22,18 +22,17 @@ public class FocusWidget  extends AppWidgetProvider {
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
 
-
-        for(int i = 0; i < appWidgetIds.length; i++) {
+        for(int i = 0; i < appWidgetIds.length; i++){
 
             int appWidgetId = appWidgetIds[i];
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+            Intent intent = new Intent(Intent.ACTION_SEARCH, Uri.parse("http://www.google.com"));
             PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
 
             RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.search_widget);
             views.setOnClickPendingIntent(R.id.search_focus, pendingIntent);
 
             appWidgetManager.updateAppWidget(appWidgetId, views);
-        }
 
+        }
     }
 }

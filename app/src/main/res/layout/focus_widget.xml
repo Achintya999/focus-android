@@ -2,7 +2,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@drawable/background_gradient">
 
     <LinearLayout
@@ -10,31 +10,47 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:id="@+id/linearLayout">
 
 
         <EditText
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="58dp"
+            android:id="@+id/edt_text"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
             android:layout_weight="1"
-            android:inputType="textPersonName" />
+            android:paddingStart="12dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/background_gradient"
+            android:gravity="center_vertical"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:hint="Search the Web" />
+
+        <ImageButton
+            android:id="@+id/microphone"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/background_gradient"
+            android:contentDescription="Search The Web"
+            android:scaleType="center"
+            android:src="@drawable/ic_mic_black" />
+
     </LinearLayout>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Set This Website"
+        android:gravity="center"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="47dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:background="@drawable/background_gradient"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
