@@ -102,10 +102,12 @@ public class SessionsSheetFragment extends LocaleAwareFragment implements View.O
         animator.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
-                getActivity().getSupportFragmentManager()
-                        .beginTransaction()
-                        .remove(SessionsSheetFragment.this)
-                        .commit();
+                if(getActivity() != null) {
+                    getActivity().getSupportFragmentManager()
+                            .beginTransaction()
+                            .remove(SessionsSheetFragment.this)
+                            .commit();
+                }
             }
         });
 

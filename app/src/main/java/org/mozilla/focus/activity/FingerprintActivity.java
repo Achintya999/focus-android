@@ -76,6 +76,7 @@ public class FingerprintActivity extends AppCompatActivity {
                             FingerprintHandler helper = new FingerprintHandler(this);
                             helper.startAuth(fingerprintManager, cryptoObject);
 
+
                         }
                     }
                 }
