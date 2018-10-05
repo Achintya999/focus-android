@@ -27,7 +27,7 @@ We encourage you to participate in this open source project. We love Pull Reques
 
 * Wiki: [https://github.com/mozilla-mobile/focus-android/wiki](https://github.com/mozilla-mobile/focus-android/wiki)
 
-Watch out for [issues with the "good first bug" label](https://github.com/mozilla-mobile/focus-android/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+bug%22). Those are easy starter bugs that are available to work on!
+Watch out for the issues with the "good first bug" label(https://github.com/mozilla-mobile/focus-android/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+bug%22). Those are easy starter bugs that are available to work on!
 
 Build instructions
 ------------------
@@ -39,10 +39,6 @@ Build instructions
   ```
 
 2. Import the project into Android Studio or build on the command line:
-
-  ```shell
-  ./gradlew clean app:assembleFocusWebviewDebug
-  ```
 
 3. Make sure to select the right build variant in Android Studio: **focusWebviewDebug**
 
